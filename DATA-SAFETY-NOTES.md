@@ -4,8 +4,8 @@ Keep this file and the policy in step. If one changes, change both, then update 
 Data Safety form in Play Console. Mismatches between the form and the policy are a
 common rejection reason.
 
-Policy URL to enter in Play Console:
-https://oak-tek.github.io/lootpick-legal/privacy/
+Policy URL to enter in Play Console: https://lootpick.quest/privacy (the GitHub Pages copy
+at oak-tek.github.io/lootpick-legal/privacy/ is kept only for older app builds).
 
 ## Data collected
 
@@ -48,3 +48,33 @@ https://oak-tek.github.io/lootpick-legal/privacy/
   checkout where the law requires it.
 - If Steam sync ships at launch, no extra Data Safety category is needed. The Steam ID
   falls under User IDs, already declared.
+
+## Source of the policy text
+
+The Terms and Privacy Policy are written once, in `web/content/legal/` in the Lootpick-Website
+repo, and rendered at https://lootpick.quest/privacy and /terms. The pages in this repo are
+generated from that source with `node docs/legal/build-static.mjs <this repo>`; never edit
+them by hand. Released app builds link here, so these pages stay published.
+
+Policy URL to enter in Play Console and App Store Connect from now on:
+https://lootpick.quest/privacy
+
+## iOS: App Privacy answers and release checklist
+
+The App Store label uses different words for the same facts as the table above. Declare the
+same data as the Play form: email, user ID, name and photo (Google sign-in), purchases,
+product interaction (PostHog), crash data (Sentry), advertising data and device ID (AdMob,
+free tier), and coarse location (AdMob, derived from IP). Advertising and device ID are
+"used to track you", because AdMob links them across other companies' apps.
+
+Before the iOS build ships, because the policy already says so:
+
+- Ask for Apple's App Tracking Transparency permission before AdMob uses the advertising
+  identifier, sequenced with the Google consent prompt (Privacy Policy section 8B).
+- Add Apple privacy manifests for the SDKs that need one (AdMob, Sentry, PostHog, OneSignal,
+  RevenueCat) and include `NSUserTrackingUsageDescription` and the calendar usage text.
+- Offer Sign in with Apple, or an equivalent privacy-focused login, since Google sign-in is
+  offered. App Store review checks this.
+- Show price, renewal terms and links to the Terms and Privacy Policy on the iOS paywall.
+- Do not link from the iOS app to website checkout outside the US without checking Apple's
+  current anti-steering rules.
