@@ -49,7 +49,7 @@ footer .mono{font-family:"Space Mono",monospace;font-size:13px}
   <h1>Privacy Policy</h1>
   <p class="meta">
     <b>LootPick</b><br>
-    Effective date: 5 August 2026<br>
+    Effective date: 2 October 2026<br>
     Developer: <b>OAK TEK - FZCO</b>, Dubai, United Arab Emirates
   </p>
 </header>
@@ -60,13 +60,13 @@ footer .mono{font-family:"Space Mono",monospace;font-size:13px}
     <li><span>01</span><div>You can browse as a guest with nothing stored on our side. If you make an account, we hold your email address.</div></li>
     <li><span>02</span><div>We store the games you track, your alerts, your purchases and your profile, because that is the product.</div></li>
     <li><span>03</span><div>Free accounts see ads, and ads involve Google collecting your advertising ID.</div></li>
-    <li><span>04</span><div>We never see your card. Google Play handles every payment.</div></li>
+    <li><span>04</span><div>We never see your card number. Google Play and the App Store handle payments in the apps, and Stripe, through RevenueCat, handles them on the website.</div></li>
     <li><span>05</span><div>We do not sell your data, and we never have.</div></li>
     <li><span>06</span><div>You can delete your account and everything in it from inside the app.</div></li>
   </ul>
 </div>
 <h2 class="sec">Age requirement</h2>
-<p>LootPick is for people aged 13 and over. We do not knowingly collect personal information from anyone under 13. If you are a parent or guardian and you believe your child under 13 has an account, email us and we will delete it and the data behind it.</p>
+<p>LootPick is for people aged 13 and over. We do not knowingly collect personal information from anyone under 13. If you are a parent or guardian and you believe your child under 13 has an account, email us and we will delete it and the data behind it. When you sign up we ask you to confirm you are 13 or older. We do not ask for your date of birth.</p>
 <h2 class="sec">What we collect</h2>
 <h3>Using LootPick as a guest</h3>
 <p>You can use LootPick without signing up. In guest mode nothing is sent to our database, your lists stay on your device, and we hold no account for you. Clearing app data or changing device loses them. This section describes what happens once you create an account.</p>
@@ -84,22 +84,26 @@ footer .mono{font-family:"Space Mono",monospace;font-size:13px}
 <h3>Steam sync, if you use it</h3>
 <p>Connecting Steam is optional. If you connect it, we store your Steam ID and the handle you entered, and read your public profile, owned games and wishlist so we can match them into your lists. We do not post anything, change anything, or read your friends list, private profile or chat. Disconnect at any time in your profile.</p>
 <h3>Subscriptions and purchases</h3>
-<p>Payments run through Google Play. We never receive, see or store your card number or billing address. RevenueCat, our subscription provider, tells us which plan you are on and whether it is active, so the app knows what to unlock. It holds an anonymous purchase identifier linked to your account.</p>
+<p>Payments in the mobile apps run through Google Play or the App Store. Payments on the website run through Stripe, using RevenueCat Web Billing. We never receive, see or store your card number. To take a website payment and work out tax, Stripe collects billing details such as your name, email address, billing country and postcode, and it may show us the country, tax and payment status of each charge. Stripe also uses payment data for its own fraud prevention and legal obligations, under its own privacy policy at <a href="https://stripe.com/privacy">stripe.com/privacy</a>. RevenueCat, our subscription provider, tells us which plan you are on and whether it is active, so the app knows what to unlock. It holds an anonymous purchase identifier linked to your account.</p>
 <h3>Advertising</h3>
 <p>Free accounts see ads served by Google AdMob. To do that, Google collects your device advertising identifier, your approximate location derived from your IP address, and information about your device.</p>
 <p>Ads are the one part of LootPick where a third party uses data for its own purposes rather than simply working on our behalf. We think you should know that plainly.</p>
 <ul class="body">
   <li>In the EEA, the UK and Switzerland we show a consent prompt before any personalised advertising. Choose non-personalised and Google receives far less.</li>
   <li>Anywhere else, you can reset or delete your advertising ID in your device settings at any time.</li>
-  <li>Ad-Free and Premium subscribers see no ads, and the advertising SDK does not run for them at all.</li>
+  <li>Ad-Free and Premium subscribers see no ads, and the advertising SDK does not start for them when the app opens. If you upgrade while the app is open, ads stop at once and the SDK does not start again the next time you open it.</li>
 </ul>
 <h3>Notifications</h3>
 <p>If you allow push notifications, OneSignal stores a push token for your device so we can tell you when a price drops or a free game appears. Turn notifications off in your device settings and the token stops being used.</p>
 <h3>Analytics</h3>
 <p>We use PostHog to see which parts of the app people actually use and where they get stuck. It records a defined set of events, such as opening the app, adding a game, setting an alert or opening a store link, along with device type, operating system version and app version, and a random identifier for your installation.</p>
-<p>You can turn this off. <b>Profile, then Preferences, then Share usage data.</b> Analytics never includes your name, email or the contents of your lists.</p>
+<p>You can turn this off. <b>Profile, then the Privacy card, then Share usage data.</b> Analytics never includes your name, email or the contents of your lists.</p>
 <h3>Email</h3>
-<p>Brevo sends our email: account emails, subscription receipts and, if you asked for it, launch and product news. Marketing email always carries an unsubscribe link, and unsubscribing does not affect account email you need to receive.</p>
+<p>Brevo sends our email: account emails and, if you asked for it, launch and product news. If you joined the LootPick launch waitlist, your email address is held in Brevo so we can tell you about the launch, and you can ask us to delete it at any time. Subscription receipts come from the payment provider you paid through. Marketing email always carries an unsubscribe link, and unsubscribing does not affect account email you need to receive.</p>
+<h2 class="sec">Crash and error reports</h2>
+<p>The mobile app uses Sentry to receive crash and error reports so we can fix bugs. A report contains the error and where it happened in the code, along with technical details such as your device model, operating system version and app version. We switch off Sentry's default collection of personal data and we do not attach your name, email address or account id to reports. This is not controlled by the analytics setting, because it is how we find out the app has broken.</p>
+<h2 class="sec">Release reminders and your calendar</h2>
+<p>If you turn on release date reminders in the mobile app and allow calendar access, the app adds an event to a calendar on your device for each game in your Picks that has a future release date, and updates it if the date moves. We do not read the contents of your other calendar entries, and we do not send calendar data to our servers. If the calendar on your device is synced by your calendar provider, that provider handles the events under its own policy. You can turn reminders off in Notifications, and remove the permission in your device settings.</p>
 <h2 class="sec">Game data, which is not about you</h2>
 <p>Prices, review scores, artwork and release dates come from IGDB, CheapShark, IsThereAnyDeal, GamerPower and the Steam Web API. That flows towards you, not away from you. Nothing about your account is sent to them.</p>
 <p>Store links may pass through a partner service before reaching the store, and can carry affiliate tracking that earns a commission for us or for that partner. Following one tells that partner and that store you clicked, as any link does. The price you pay is identical. We do not adjust scores or rankings based on commission, and the Buy Now Score is calculated the same way regardless of whether a link earns us anything.</p>
@@ -109,33 +113,35 @@ footer .mono{font-family:"Space Mono",monospace;font-size:13px}
 <ul class="body">
   <li><b>Performing our contract with you</b>, for your account, your tracked games, your alerts and your subscription. Without this data there is no product.</li>
   <li><b>Your consent</b>, for personalised advertising, push notifications, marketing email and Steam sync. Withdraw any of them at any time, in the app or your device settings.</li>
-  <li><b>Our legitimate interests</b>, for analytics, security and fraud prevention, balanced against your privacy. This is why analytics stays coarse and event based rather than recording everything you tap.</li>
+  <li><b>Our legitimate interests</b>, for analytics, crash reporting, security and fraud prevention, balanced against your privacy. This is why analytics stays coarse and event based rather than recording everything you tap.</li>
 </ul>
 <p>If you are in the UAE, the Federal Personal Data Protection Law gives you equivalent rights, listed below.</p>
 <h2 class="sec">Who else sees it</h2>
-<p>We do not sell your personal information, and we do not share it for cross context behavioural advertising beyond the AdMob activity described above. The companies listed here process data on our instructions as our service providers, apart from Google's advertising business, which acts for itself.</p>
+<p>We do not sell your personal information, and we do not share it for cross context behavioural advertising beyond the AdMob activity described above. The companies listed here process data on our instructions as our service providers, apart from Google's advertising business and Stripe's own fraud-prevention and legal uses, which they decide for themselves.</p>
 <ul class="body">
   <li><a href="https://clerk.com/legal/privacy">Clerk</a>, accounts and sign-in</li>
   <li><a href="https://supabase.com/privacy">Supabase</a>, database and storage</li>
-  <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a>, subscription status</li>
-  <li><a href="https://policies.google.com/privacy">Google AdMob and Google Play</a>, advertising and payments</li>
+  <li><a href="https://www.revenuecat.com/privacy">RevenueCat</a>, subscription status, and <a href="https://stripe.com/privacy">Stripe</a>, card payments on the website</li>
+  <li><a href="https://policies.google.com/privacy">Google AdMob and Google Play</a> and the <a href="https://www.apple.com/legal/privacy/">Apple App Store</a>, advertising and payments</li>
   <li><a href="https://onesignal.com/privacy_policy">OneSignal</a>, push notifications</li>
   <li><a href="https://posthog.com/privacy">PostHog</a>, product analytics</li>
   <li><a href="https://www.brevo.com/legal/privacypolicy/">Brevo</a>, email</li>
+  <li><a href="https://sentry.io/privacy/">Sentry</a>, crash and error reports in the mobile app</li>
 </ul>
 <p>We will also disclose information if the law requires it, or to protect our rights, our users or the security of the service.</p>
 <h2 class="sec">Where it goes</h2>
 <p>We operate from the United Arab Emirates and our providers process data on servers in the United States and the European Union. Where personal data leaves the UK or EEA, our providers rely on the European Commission's standard contractual clauses or an equivalent safeguard.</p>
 <h2 class="sec">How long we keep it</h2>
 <ul class="body">
-  <li><b>Account and app data</b>: until you delete your account, then removed from live systems immediately and from encrypted backups within 30 days.</li>
+  <li><b>Account and app data</b>: until you delete your account, then removed from our live systems. Backups are cleared on their own schedule, and provider records follow the provider's retention.</li>
   <li><b>Subscription records</b>: retained after deletion where tax and accounting law requires it, without the rest of your profile attached.</li>
-  <li><b>Analytics events</b>: retained by PostHog for up to 12 months.</li>
-  <li><b>Email records</b>: until you unsubscribe or your account is deleted.</li>
+  <li><b>Analytics events</b>: kept by PostHog for as long as we need them to understand how the app is used, and deleted on request.</li>
+  <li><b>Crash and error reports</b>: kept by Sentry under its own retention period.</li>
+  <li><b>Email</b>: our own email history is deleted with your account. Your contact record and send log at Brevo are kept until you unsubscribe or ask us to delete them.</li>
 </ul>
 <h2 class="sec">Deleting your account</h2>
 <div class="callout">
-  <p style="margin:0">In the app: <b>Profile, then Delete Account</b>. It removes your wishlist, backlog, alerts, purchases, profile and Steam connection. It cannot be undone.</p>
+  <p style="margin:0">In the app: <b>Profile, then Delete Account</b>. It removes your wishlist, backlog, alerts, purchases, profile and Steam connection. It cannot be undone. Backups are cleared on their own schedule, and records held by our processors follow their own retention periods. Your contact record at Brevo is not removed automatically, so email us if you want Brevo or another processor asked to delete its copy.</p>
 </div>
 <p>If you cannot reach the app, email <a href="mailto:play@lootpick.quest">play@lootpick.quest</a> from the address on the account and we will delete it within 30 days.</p>
 <h2 class="sec">Your rights</h2>
